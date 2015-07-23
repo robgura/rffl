@@ -1,0 +1,47 @@
+#!/bin/awk -f
+
+
+BEGIN {
+    gameLine = 99;
+}
+
+{
+    if ($1 == "Century" || $1 == "Rec" || $1 == "Century Park2" || $1 == "HS")
+    {
+        gameLine = 1;
+    }
+
+    if (gameLine == 1)
+    {
+        loc = $0;
+    }
+    else if (gameLine == 2)
+    {
+        date = $0;
+    }
+    else if (gameLine == 3)
+    {
+        time = $0;
+    }
+    else if (gameLine == 4)
+    {
+        league = $0;
+    }
+    else if (gameLine == 5)
+    {
+        home = $0;
+    }
+    else if (gameLine == 6)
+    {
+        away = $0;
+        printf("%15s %10s %8s %14s %14s\n", loc, date, time, home, away);
+    }
+
+    gameLine++;
+
+}
+
+
+
+
+
