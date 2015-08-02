@@ -1,0 +1,166 @@
+Number,League_Number,Away,Home,Date,Time,Location,League
+1,1,Bears,Cardinals,Sat 8/8,10am,RHS Stadium,NFC 5-7
+2,2,Saints,Eagles,Sat 8/8,11am,RHS Stadium,NFC 5-7
+3,3,Falcons,Seahawks,Sat 8/8,12pm,RHS Stadium,NFC 5-7
+4,4,Panthers,Lions,Sat 8/8,1pm,RHS Stadium,NFC 5-7
+5,1,Chiefs,Colts,Sat 8/8,2pm,RHS Stadium,AFC 8-10
+6,2,Raiders,Jets,Sat 8/8,3pm,RHS Stadium,AFC 8-10
+7,3,Dolphins,Jaguars,Sat 8/8,4pm,RHS Stadium,AFC 8-10
+8,4,Broncos,Ravens,Sat 8/8,5pm,RHS Stadium,AFC 8-10
+9,5,Titans,Steelers,Sat 8/8,6pm,RHS Stadium,AFC 8-10
+10,1,Sabercats,Blaze,Sun 8/9,1pm,RHS Stadium,AFL 11-14
+11,2,Thunder,Gladiators,Sun 8/9,2pm,RHS Stadium,AFL 11-14
+12,3,Sharks,Storm,Sun 8/9,3pm,RHS Stadium,AFL 11-14
+13,4,Predators,Rattlers,Sun 8/9,4pm,RHS Stadium,AFL 11-14
+14,5,Rush,Power,Sun 8/9,5pm,RHS Stadium,AFL 11-14
+15,5,Cardinals,Saints,Sat 8/15,10am,Century Park 1,NFC 5-7
+16,6,Lions,Eagles,Sat 8/15,10am,Century Park 2,NFC 5-7
+17,7,Seahawks,Bears,Sat 8/15,11am,Century Park 1,NFC 5-7
+18,8,Falcons,Panthers,Sat 8/15,11am,Century Park 2,NFC 5-7
+19,6,Colts,Titans,Sat 8/15,12pm,Century Park 1,AFC 8-10
+20,7,Chiefs,Jets,Sat 8/15,12pm,Century Park 2,AFC 8-10
+21,8,Steelers,Raiders,Sat 8/15,1pm,Century Park 1,AFC 8-10
+22,9,Ravens,Jaguars,Sat 8/15,1pm,Century Park 2,AFC 8-10
+23,10,Broncos,Dolphins,Sat 8/15,2pm,Century Park 1,AFC 8-10
+24,6,Blaze,Rush,Sat 8/15,2pm,Century Park 2,AFL 11-14
+25,7,Sabercats,Gladiators,Sat 8/15,3pm,Century Park 1,AFL 11-14
+26,8,Power,Thunder,Sat 8/15,3pm,Century Park 2,AFL 11-14
+27,9,Rattlers,Storm,Sat 8/15,4pm,Century Park 1,AFL 11-14
+28,10,Predators,Sharks,Sat 8/15,4pm,Century Park 2,AFL 11-14
+29,9,Cardinals,Eagles,Mon 8/17,6pm,Dale Blum Field,NFC 5-7
+30,11,Jaguars,Jets,Mon 8/17,7pm,Dale Blum Field,AFC 8-10
+31,11,Storm,Gladiators,Mon 8/17,8pm,Dale Blum Field,AFL 11-14
+32,10,Panthers,Seahawks,Tue 8/18,6pm,Dale Blum Field,NFC 5-7
+33,12,Ravens,Raiders,Tue 8/18,7pm,Dale Blum Field,AFC 8-10
+34,12,Rattlers,Thunder,Tue 8/18,8pm,Dale Blum Field,AFL 11-14
+35,11,Saints,Lions,Sat 8/22,10am,Century Park 1,NFC 5-7
+36,12,Falcons,Cardinals,Sat 8/22,10am,Century Park 2,NFC 5-7
+37,13,Panthers,Bears,Sat 8/22,10am,Dale Blum Field,NFC 5-7
+38,14,Eagles,Seahawks,Sat 8/22,11am,Century Park 1,NFC 5-7
+39,13,Colts,Broncos,Sat 8/22,11am,Century Park 2,AFC 8-10
+40,14,Dolphins,Raiders,Sat 8/22,11am,Dale Blum Field,AFC 8-10
+41,15,Ravens,Titans,Sat 8/22,12pm,Century Park 1,AFC 8-10
+42,16,Jets,Steelers,Sat 8/22,12pm,Century Park 2,AFC 8-10
+43,17,Jaguars,Chiefs,Sat 8/22,12pm,Dale Blum Field,AFC 8-10
+44,13,Blaze,Predators,Sat 8/22,1pm,Century Park 1,AFL 11-14
+45,14,Storm,Sabercats,Sat 8/22,1pm,Century Park 2,AFL 11-14
+46,15,Rattlers,Rush,Sat 8/22,1pm,Dale Blum Field,AFL 11-14
+47,16,Gladiators,Power,Sat 8/22,2pm,Century Park 1,AFL 11-14
+48,17,Sharks,Thunder,Sat 8/22,2pm,Century Park 2,AFL 11-14
+49,15,Saints,Panthers,Sun 8/23,1pm,Century Park 1,NFC 5-7
+50,16,Cardinals,Lions,Sun 8/23,1pm,Century Park 2,NFC 5-7
+51,17,Bears,Falcons,Sun 8/23,1pm,Dale Blum Field,NFC 5-7
+52,18,Seahawks,Eagles,Sun 8/23,2pm,Century Park 1,NFC 5-7
+53,18,Raiders,Chiefs,Sun 8/23,2pm,Century Park 2,AFC 8-10
+54,19,Titans,Jets,Sun 8/23,2pm,Dale Blum Field,AFC 8-10
+55,20,Ravens,Dolphins,Sun 8/23,3pm,Century Park 1,AFC 8-10
+56,21,Steelers,Broncos,Sun 8/23,3pm,Century Park 2,AFC 8-10
+57,22,Jaguars,Colts,Sun 8/23,3pm,Dale Blum Field,AFC 8-10
+58,18,Storm,Blaze,Sun 8/23,4pm,Century Park 1,AFL 11-14
+59,19,Rush,Gladiators,Sun 8/23,4pm,Century Park 2,AFL 11-14
+60,20,Rattlers,Sharks,Sun 8/23,4pm,Dale Blum Field,AFL 11-14
+61,21,Power,Predators,Sun 8/23,5pm,Century Park 1,AFL 11-14
+62,22,Thunder,Sabercats,Sun 8/23,5pm,Century Park 2,AFL 11-14
+63,19,Saints,Falcons,Mon 8/24,6pm,Dale Blum Field,NFC 5-7
+64,23,Sharks,Sabercats,Mon 8/24,7pm,Dale Blum Field,AFL 11-14
+65,20,Lions,Saints,Sat 8/29,10am,Century Park 1,NFC 5-7
+66,21,Cardinals,Seahawks,Sat 8/29,10am,Century Park 2,NFC 5-7
+67,22,Bears,Falcons,Sat 8/29,11am,Century Park 1,NFC 5-7
+68,23,Panthers,Eagles,Sat 8/29,11am,Century Park 2,NFC 5-7
+69,23,Steelers,Dolphins,Sat 8/29,12pm,Century Park 1,AFC 8-10
+70,24,Ravens,Chiefs,Sat 8/29,12pm,Century Park 2,AFC 8-10
+71,25,Jaguars,Titans,Sat 8/29,1pm,Century Park 1,AFC 8-10
+72,26,Colts,Jets,Sat 8/29,1pm,Century Park 2,AFC 8-10
+73,27,Raiders,Broncos,Sat 8/29,2pm,Century Park 1,AFC 8-10
+74,24,Power,Sharks,Sat 8/29,2pm,Century Park 2,AFL 11-14
+75,25,Blaze,Gladiators,Sat 8/29,3pm,Century Park 1,AFL 11-14
+76,26,Storm,Rush,Sat 8/29,3pm,Century Park 2,AFL 11-14
+77,27,Rattlers,Sabercats,Sat 8/29,4pm,Century Park 1,AFL 11-14
+78,28,Thunder,Predators,Sat 8/29,4pm,Century Park 2,AFL 11-14
+79,24,Bears,Panthers,Sun 8/30,1pm,Century Park 1,NFC 5-7
+80,25,Eagles,Falcons,Sun 8/30,1pm,Century Park 2,NFC 5-7
+81,26,Saints,Cardinals,Sun 8/30,1pm,Dale Blum Field,NFC 5-7
+82,27,Seahawks,Lions,Sun 8/30,2pm,Century Park 1,NFC 5-7
+83,28,Jets,Dolphins,Sun 8/30,2pm,Century Park 2,AFC 8-10
+84,29,Raiders,Colts,Sun 8/30,2pm,Dale Blum Field,AFC 8-10
+85,30,Broncos,Jaguars,Sun 8/30,3pm,Century Park 1,AFC 8-10
+86,31,Chiefs,Titans,Sun 8/30,3pm,Century Park 2,AFC 8-10
+87,32,Steelers,Ravens,Sun 8/30,3pm,Dale Blum Field,AFC 8-10
+88,29,Gladiators,Sharks,Sun 8/30,4pm,Century Park 1,AFL 11-14
+89,30,Power,Rattlers,Sun 8/30,4pm,Century Park 2,AFL 11-14
+90,31,Predators,Storm,Sun 8/30,4pm,Dale Blum Field,AFL 11-14
+91,32,Thunder,Blaze,Sun 8/30,5pm,Century Park 1,AFL 11-14
+92,33,Sabercats,Rush,Sun 8/30,5pm,Century Park 2,AFL 11-14
+93,33,Titans,Broncos,Mon 8/31,6pm,Dale Blum Field,AFC 8-10
+94,34,Rush,Predators,Mon 8/31,7pm,Dale Blum Field,AFL 11-14
+95,28,Panthers,Cardinals,Sat 9/5,10am,Century Park 1,NFC 5-7
+96,29,Falcons,Lions,Sat 9/5,10am,Century Park 2,NFC 5-7
+97,30,Seahawks,Saints,Sat 9/5,10am,Dale Blum Field,NFC 5-7
+98,31,Bears,Eagles,Sat 9/5,11am,Century Park 1,NFC 5-7
+99,34,Dolphins,Colts,Sat 9/5,11am,Century Park 2,AFC 8-10
+100,35,Broncos,Chiefs,Sat 9/5,11am,Dale Blum Field,AFC 8-10
+101,36,Jaguars,Steelers,Sat 9/5,12pm,Century Park 1,AFC 8-10
+102,37,Jets,Ravens,Sat 9/5,12pm,Century Park 2,AFC 8-10
+103,38,Titans,Raiders,Sat 9/5,12pm,Dale Blum Field,AFC 8-10
+104,35,Sharks,Blaze,Sat 9/5,1pm,Century Park 1,AFL 11-14
+105,36,Storm,Power,Sat 9/5,1pm,Century Park 2,AFL 11-14
+106,37,Rush,Thunder,Sat 9/5,1pm,Dale Blum Field,AFL 11-14
+107,38,Gladiators,Rattlers,Sat 9/5,2pm,Century Park 1,AFL 11-14
+108,39,Predators,Sabercats,Sat 9/5,2pm,Century Park 2,AFL 11-14
+109,32,Bears,Lions,Tue 9/8,6pm,Dale Blum Field,NFC 5-7
+110,39,Dolphins,Chiefs,Tue 9/8,7pm,Dale Blum Field,AFC 8-10
+111,33,Cardinals,Bears,Sat 9/12,10am,Century Park 1,NFC 5-7
+112,34,Eagles,Saints,Sat 9/12,10am,Century Park 2,NFC 5-7
+113,35,Seahawks,Falcons,Sat 9/12,11am,Century Park 1,NFC 5-7
+114,36,Lions,Panthers,Sat 9/12,11am,Century Park 2,NFC 5-7
+115,40,Colts,Ravens,Sat 9/12,12pm,Century Park 1,AFC 8-10
+116,41,Chiefs,Steelers,Sat 9/12,12pm,Century Park 2,AFC 8-10
+117,42,Raiders,Jaguars,Sat 9/12,1pm,Century Park 1,AFC 8-10
+118,43,Titans,Dolphins,Sat 9/12,1pm,Century Park 2,AFC 8-10
+119,44,Jets,Broncos,Sat 9/12,2pm,Century Park 1,AFC 8-10
+120,40,Blaze,Rattlers,Sat 9/12,2pm,Century Park 2,AFL 11-14
+121,41,Sabercats,Power,Sat 9/12,3pm,Century Park 1,AFL 11-14
+122,42,Thunder,Storm,Sat 9/12,3pm,Century Park 2,AFL 11-14
+123,43,Rush,Sharks,Sat 9/12,4pm,Century Park 1,AFL 11-14
+124,44,Gladiators,Predators,Sat 9/12,4pm,Century Park 2,AFL 11-14
+125,45,Colts,Steelers,Mon 9/14,6pm,Dale Blum Field,AFC 8-10
+126,45,Blaze,Power,Mon 9/14,7pm,Dale Blum Field,AFL 11-14
+127,37,Panthers,Seahawks,Sat 9/19,10am,Century Park 1,NFC 5-7
+128,38,Eagles,Cardinals,Sat 9/19,10am,Century Park 2,NFC 5-7
+129,39,Falcons,Saints,Sat 9/19,10am,Dale Blum Field,NFC 5-7
+130,40,Lions,Bears,Sat 9/19,11am,Century Park 1,NFC 5-7
+131,46,Jets,Raiders,Sat 9/19,11am,Century Park 2,AFC 8-10
+132,47,Dolphins,Jaguars,Sat 9/19,11am,Dale Blum Field,AFC 8-10
+133,48,Chiefs,Colts,Sat 9/19,12pm,Century Park 1,AFC 8-10
+134,49,Broncos,Ravens,Sat 9/19,12pm,Century Park 2,AFC 8-10
+135,50,Steelers,Titans,Sat 9/19,12pm,Dale Blum Field,AFC 8-10
+136,46,Sabercats,Blaze,Sat 9/19,1pm,Century Park 1,AFL 11-14
+137,47,Sharks,Storm,Sat 9/19,1pm,Century Park 2,AFL 11-14
+138,48,Predators,Rattlers,Sat 9/19,1pm,Dale Blum Field,AFL 11-14
+139,49,Gladiators,Thunder,Sat 9/19,2pm,Century Park 1,AFL 11-14
+140,50,Power,Rush,Sat 9/19,2pm,Century Park 2,AFL 11-14
+141,51,AFC 10 seed,AFC 7 seed,Wed 9/23,6pm,Dale Blum Field,AFC 8-10
+142,52,AFC 9 seed,AFC 8 seed,Wed 9/23,7pm,Dale Blum Field,AFC 8-10
+143,51,AFL 10 seed,AFL 7 seed,Thur 9/24,6pm,Dale Blum Field,AFL 11-14
+144,52,AFL 9 seed,AFL 8 seed,Thur 9/24,7pm,Dale Blum Field,AFL 11-14
+145,41,NFC 8 seed,NFC 1 seed,Sat 9/26,10am,Century Park 1,NFC 5-7
+146,42,NFC 7 seed,NFC 2 seed,Sat 9/26,10am,Century Park 2,NFC 5-7
+147,43,NFC 6 seed,NFC 3 seed,Sat 9/26,11am,Century Park 1,NFC 5-7
+148,44,NFC 5 seed,NFC 4 seed,Sat 9/26,11am,Century Park 2,NFC 5-7
+149,53,Lowest AFC,AFC 1 seed,Sat 9/26,12pm,Century Park 1,AFC 8-10
+150,54,3rd High AFC,AFC 2 seed,Sat 9/26,12pm,Century Park 2,AFC 8-10
+151,55,2nd High AFC,AFC 3 seed,Sat 9/26,1pm,Century Park 1,AFC 8-10
+152,56,Highest AFC,AFC 4 seed,Sat 9/26,1pm,Century Park 2,AFC 8-10
+153,53,Lowest AFL,AFL 1 seed,Sat 9/26,2pm,Century Park 1,AFL 11-14
+154,54,3rd High AFL,AFL 2 seed,Sat 9/26,2pm,Century Park 2,AFL 11-14
+155,55,2nd High AFL,AFL 3 seed,Sat 9/26,3pm,Century Park 1,AFL 11-14
+156,56,Highest AFL,AFL 4 seed,Sat 9/26,3pm,Century Park 2,AFL 11-14
+157,45,NFC TBD,NFC TBD,Sat 10/3,10am,Century Park 1,NFC 5-7
+158,46,NFC TBD,NFC TBD,Sat 10/3,10am,Century Park 2,NFC 5-7
+159,57,AFC TBD,AFC TBD,Sat 10/3,11am,Century Park 1,AFC 8-10
+160,58,AFC TBD,AFC TBD,Sat 10/3,11am,Century Park 2,AFC 8-10
+161,57,AFL TBD,AFL TBD,Sat 10/3,12pm,Century Park 1,AFL 11-14
+162,58,AFL TBD,AFL TBD,Sat 10/3,12pm,Century Park 2,AFL 11-14
+163,47,NFC lowest,NFC highest,Sat 10/10,2pm,RHS Stadium,NFC 5-7
+164,59,AFC lowest,AFC highest,Sat 10/10,3:30pm,RHS Stadium,AFC 8-10
+165,59,AFL lowest,AFL highest,Sat 10/10,5pm,RHS Stadium,AFL 11-14

@@ -1,8 +1,69 @@
 #!/bin/awk -f
 
+# Highlight full schedule ctrl-c 
+# Then dump it into a text file ctrl-v
+# Should look like this:
+#
+# 2015 Flag Football Schedule
+# Field
+# Day
+# Time
+# Level
+# Home
+# Away
+# Pre Season
+# Century Park1
+# Sat 8/1
+# 10am
+# NFC 5-7
+# Cardinals
+# Seahawks
+# Century Park2
+# Sat 8/1
+# 10am
+# NFC 5-7
+# Falcons
+# Lions
+# Rec Center
+# Sat 8/1
+# 10am
+# NFC 5-7
+# Bears
+# Saints
+# Century Park1
+# Sat 8/1
+# 11am
+# NFC 5-7
+# Panthers
+# Eagles
+# Century Park2
+# Sat 8/1
+# 11am
+# AFC 8-10
+# Chiefs
+# Raiders
+# Rec Center
+# Sat 8/1
+# 11am
+# AFC 8-10
+# Dolphins
+# Ravens
+# Century Park1
+# Sat 8/1
+# ...
 
 BEGIN {
     gameLine = 99;
+    csv=1;
+    number = 0;
+    nfc_number = 0;
+    afc_number = 0;
+    afl_number = 0;
+
+    if (csv)
+    {
+        printf("Number,League_Number,Away,Home,Date,Time,Location,League\n");
+    }
 }
 
 {
@@ -14,6 +75,22 @@ BEGIN {
     if (gameLine == 1)
     {
         loc = $0;
+        if (loc == "Century Park1")
+        {
+            loc = "Century Park 1";
+        }
+        else if (loc == "Century Park2")
+        {
+            loc = "Century Park 2";
+        }
+        else if (loc == "Rec Center")
+        {
+            loc = "Dale Blum Field";
+        }
+        else if (loc == "HS Stadium")
+        {
+            loc = "RHS Stadium";
+        }
     }
     else if (gameLine == 2)
     {
@@ -34,7 +111,36 @@ BEGIN {
     else if (gameLine == 6)
     {
         away = $0;
-        printf("%15s %10s %8s %14s %14s\n", loc, date, time, home, away);
+
+        if (league != "All" && date != "Sat 8/1")
+        {
+            ++number;
+            league_number = 0;
+            if(league == "NFC 5-7")
+            {
+                ++nfc_number;
+                league_number = nfc_number;
+            }
+            else if(league == "AFC 8-10")
+            {
+                ++afc_number;
+                league_number = afc_number;
+            }
+            else if(league == "AFL 11-14")
+            {
+                ++afl_number;
+                league_number = afl_number;
+            }
+
+            if(csv == 1)
+            {
+                printf("%s,%s,%s,%s,%s,%s,%s,%s\n", number, league_number, away, home, date, time, loc, league);
+            }
+            else
+            {
+                printf("RFFL %s @ %s at %s %s %s \n", away, home, date, time, loc);
+            }
+        }
     }
 
     gameLine++;
