@@ -143,18 +143,18 @@ Number,League_Number,Away,Home,Date,Time,Location,League
 142,52,Dolphins,Chiefs,Wed 9/23,7pm,Dale Blum Field,AFC 8-10
 143,51,Power,Sabercats,Thur 9/24,6pm,Dale Blum Field,AFL 11-14
 144,52,Rattlers,Predators,Thur 9/24,7pm,Dale Blum Field,AFL 11-14
-145,41,NFC 8 seed,NFC 1 seed,Sat 9/26,10am,Century Park 1,NFC 5-7
-146,42,NFC 7 seed,NFC 2 seed,Sat 9/26,10am,Century Park 2,NFC 5-7
-147,43,NFC 6 seed,NFC 3 seed,Sat 9/26,11am,Century Park 1,NFC 5-7
-148,44,NFC 5 seed,NFC 4 seed,Sat 9/26,11am,Century Park 2,NFC 5-7
-149,53,Lowest AFC,AFC 1 seed,Sat 9/26,12pm,Century Park 1,AFC 8-10
-150,54,3rd High AFC,AFC 2 seed,Sat 9/26,12pm,Century Park 2,AFC 8-10
-151,55,2nd High AFC,AFC 3 seed,Sat 9/26,1pm,Century Park 1,AFC 8-10
-152,56,Highest AFC,AFC 4 seed,Sat 9/26,1pm,Century Park 2,AFC 8-10
-153,53,Lowest AFL,AFL 1 seed,Sat 9/26,2pm,Century Park 1,AFL 11-14
-154,54,3rd High AFL,AFL 2 seed,Sat 9/26,2pm,Century Park 2,AFL 11-14
-155,55,2nd High AFL,AFL 3 seed,Sat 9/26,3pm,Century Park 1,AFL 11-14
-156,56,Highest AFL,AFL 4 seed,Sat 9/26,3pm,Century Park 2,AFL 11-14
+145,41,Panthers,Lions,Sat 9/26,10am,Century Park 1,NFC 5-7
+146,42,Seahawks,Bears,Sat 9/26,10am,Century Park 2,NFC 5-7
+147,43,Eagles,Falcons,Sat 9/26,11am,Century Park 1,NFC 5-7
+148,44,Cardinals,Saints,Sat 9/26,11am,Century Park 2,NFC 5-7
+149,53,Chiefs,Broncos,Sat 9/26,12pm,Century Park 1,AFC 8-10
+150,54,Ravens,Titans,Sat 9/26,12pm,Century Park 2,AFC 8-10
+151,55,Jaguars,Jets,Sat 9/26,1pm,Century Park 1,AFC 8-10
+152,56,Steelers,Colts,Sat 9/26,1pm,Century Park 2,AFC 8-10
+153,53,Sharks,Rush,Sat 9/26,2pm,Century Park 1,AFL 11-14
+154,54,Storm,Thunder,Sat 9/26,2pm,Century Park 2,AFL 11-14
+155,55,Predators,Gladiators,Sat 9/26,3pm,Century Park 1,AFL 11-14
+156,56,Sabercats,Blaze,Sat 9/26,3pm,Century Park 2,AFL 11-14
 157,45,NFC TBD,NFC TBD,Sat 10/3,10am,Century Park 1,NFC 5-7
 158,46,NFC TBD,NFC TBD,Sat 10/3,10am,Century Park 2,NFC 5-7
 159,57,AFC TBD,AFC TBD,Sat 10/3,11am,Century Park 1,AFC 8-10
