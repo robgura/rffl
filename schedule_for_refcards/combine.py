@@ -24,16 +24,22 @@ def compare_dates(left, rite):
     return 0
 
 def compare(left, rite):
-    val = strcomp(left['date'], rite['date'])
+    # sort days together
+    if left['day'] < rite['day']:
+        return -1
+
+    if left['day'] > rite['day']:
+        return 1
+
+    # then sort by location within the day
+    val = strcomp(left['location'], rite['location'])
 
     if val == 0:
-        val = strcomp(left['location'], rite['location'])
-
-        if val == 0:
-            if left['dt'] < rite['dt']:
-                val = -1
-            elif left['dt'] > rite['dt']:
-                val = 1
+        # then sort by time within the location
+        if left['dt'] < rite['dt']:
+            val = -1
+        elif left['dt'] > rite['dt']:
+            val = 1
 
     return val
 
@@ -58,6 +64,7 @@ def readFile(fileName):
 
             st = game['date'] + ' ' + game['time']
             game['dt'] = datetime.strptime(st, '%m/%d/%Y %I:%M%p')
+            game['day'] = datetime.strptime(game['date'] + ' 12:00am', '%m/%d/%Y %I:%M%p')
 
             if game['location'] == 'Rec Center (Dale Blum Field)':
                 game['location'] = 'Dale Blum Field'
