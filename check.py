@@ -39,6 +39,10 @@ def getTime(time):
         return 17
     if time == '6pm':
         return 18
+    if time == '7pm':
+        return 19
+    if time == '8pm':
+        return 20
 
     if time == '1:30pm':
         return 13.5
@@ -51,10 +55,11 @@ def getTime(time):
     if time == '5:30pm':
         return 17.5
 
+    print time
     raise 'shit'
 
 
-def check_two(t1Name, t2Name):
+def check_two(t1Name, t2Name, backToBackOkay=False):
     t1 = teamSchedule[t1Name]
     t2 = teamSchedule[t2Name]
 
@@ -78,9 +83,15 @@ def check_two(t1Name, t2Name):
             time2 = getTime(d2['time'])
 
             if abs(time1 - time2) < 2:
-                print day
-                print t1Name, "at", d1['loc'], d1['time']
-                print t2Name, "at", d2['loc'], d2['time']
+                if not backToBackOkay:
+                    print day
+                    print t1Name, "at", d1['loc'], d1['time']
+                    print t2Name, "at", d2['loc'], d2['time']
+                else:
+                    if d1['loc'] != d2['loc']:
+                        print day
+                        print t1Name, "at", d1['loc'], d1['time']
+                        print t2Name, "at", d2['loc'], d2['time']
 
         except KeyError as e:
             pass
@@ -117,6 +128,19 @@ with open('orig.csv') as csvfile:
 
 check_two("Dolphins", "Storm")
 check_two("Bears", "Jaguars")
-check_two("Cardinals", "Steelers")
-check_two("Panthers", "Titans")
-check_two("Titans", "Thunder")
+check_two("Bears", "Thunder")
+check_two("Steelers", "Fury")
+
+# these teams are assistants for at least one of the team so they don't necessarily need
+# the one hour gap, but they do need to be on the same field
+check_two("Jets", "Storm")
+check_two("Texans", "Outlaws")
+check_two("Buccaneers", "Ravens")
+check_two("Ravens", "Blaze")
+
+
+# these are spectators so it isn't as important to have the hour gap
+# however it would be nice if they could be at the same field back to back
+# thus the True
+check_two("Falcons", "Steelers", True)
+check_two("Steelers", "Rattlers", True)
