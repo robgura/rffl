@@ -1,11 +1,30 @@
 #!/usr/bin/env python
 
 import csv
+import re
+import sys
 
 # reads a csv as exported from excel and checks for teams with coaches that are coaching two teams
 # to see if they have any conflicts where their two teams have back to back games
 
 teamSchedule = dict()
+games = []
+teams = dict()
+
+def fixgame(game):
+    if game['loc'] == 'Century Park2':
+        game['loc'] = 'Century Park 2'
+
+    if game['loc'] == 'Century Park1':
+        game['loc'] = 'Century Park 1'
+
+    if game['loc'] == 'Rec Center':
+        game['loc'] = 'Rec Center (Dale Blum Field)'
+
+    game['mmddyy'] = game['day'].split(' ')[1] + '/17'
+
+    iTime = getTime(game['time'])
+    game['hhmm'] = hhmm(iTime)
 
 def create_day_dict(schdule):
 
@@ -18,6 +37,44 @@ def create_day_dict(schdule):
             dayDict[day] = evt
 
     return dayDict
+
+def hhmm(time):
+    if time == 10:
+        return '10:00 am'
+    if time == 11:
+        return '11:00 am'
+    if time == 12:
+        return '12:00 pm'
+    if time == 13:
+        return '1:00 pm'
+    if time == 14:
+        return '2:00 pm'
+    if time == 15:
+        return '3:00 pm'
+    if time == 16:
+        return '4:00 pm'
+    if time == 17:
+        return '5:00 pm'
+    if time == 18:
+        return '6:00 pm'
+    if time == 19:
+        return '7:00 pm'
+    if time == 20:
+        return '8:00 pm'
+
+    if time == 13.5:
+        return '1:30 pm'
+    if time == 14.5:
+        return '2:30 pm'
+    if time == 15.5:
+        return '3:30 pm'
+    if time == 16.5:
+        return '4:30 pm'
+    if time == 17.5:
+        return '5:30 pm'
+
+    print time
+    raise 'shit'
 
 def getTime(time):
 
@@ -57,7 +114,6 @@ def getTime(time):
 
     print time
     raise 'shit'
-
 
 def check_two(t1Name, t2Name, backToBackOkay=False):
     t1 = teamSchedule[t1Name]
@@ -113,6 +169,7 @@ with open('orig.csv') as csvfile:
         loc = row[2]
         day = row[3]
         time = row[4]
+        division = row[5]
 
         schedule = {
             'time': time,
@@ -126,6 +183,28 @@ with open('orig.csv') as csvfile:
         addSchedule(home, schedule)
         addSchedule(away, schedule)
 
+        # populate game and teams
+        if loc == 'Field' or ' ' in home or time == 'Varies' or time == '??':
+            continue
+
+        game = {
+            'time': time,
+            'day': day,
+            'loc': loc,
+            'division': division,
+            'home': home,
+            'away': away
+        }
+
+        fixgame(game)
+        games.append(game)
+
+        if not division in teams:
+            teams[division] = dict()
+
+        teams[division][home] = True
+        teams[division][away] = True
+
 check_two("Dolphins", "Storm")
 check_two("Bears", "Jaguars")
 check_two("Bears", "Thunder")
@@ -138,9 +217,26 @@ check_two("Texans", "Outlaws")
 check_two("Buccaneers", "Ravens")
 check_two("Ravens", "Blaze")
 
-
 # these are spectators so it isn't as important to have the hour gap
 # however it would be nice if they could be at the same field back to back
 # thus the True
 check_two("Falcons", "Steelers", True)
 check_two("Steelers", "Rattlers", True)
+
+with open('/vagrant/teams.csv', 'w') as outFile:
+    for div in teams:
+        sys.stderr.write('Division ' + div + ' team count: ' + str(len(teams[div])) + '\n')
+        for team in teams[div]:
+            outFile.write(div + ',' + team + '\n')
+
+with open('/vagrant/schedule.csv', 'w') as outFile:
+    for game in games:
+        outFile.write(game['mmddyy'] + ','
+                    + game['hhmm'] + ','
+                    + game['loc'] + ','
+                    + game['away'] + ','
+                    + game['home'] + ','
+                    + game['division']
+                    + '\n'
+        )
+

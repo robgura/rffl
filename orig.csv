@@ -35,8 +35,8 @@ Reg Season,Week 2,Century Park1,Sat 8/19,10am,NFC 5-7,Vikings,Eagles
 ,,Century Park2,Sat 8/19,11am,AFC 8-10,Texans,Raiders
 ,,Rec Center,Sat 8/19,11am,AFC 8-10,Dolphins,Broncos
 ,,Century Park1,Sat 8/19,12pm,AFC 8-10,Chargers,Jaguars
-,,Century Park2,Sat 8/19,12pm,AFC 8-10,Thunder,Rattlers
-,,Rec Center,Sat 8/19,12pm,AFL 11-14,Steelers,Ravens
+,,Century Park2,Sat 8/19,12pm,AFL 11-14,Thunder,Rattlers
+,,Rec Center,Sat 8/19,12pm,AFC 8-10,Steelers,Ravens
 ,,Century Park1,Sat 8/19,1pm,AFL 11-14,Avengers,Power
 ,,Century Park2,Sat 8/19,1pm,AFL 11-14,Rush,Storm
 ,,Rec Center,Sat 8/19,1pm,AFL 11-14,Sharks,Blaze
@@ -147,7 +147,6 @@ Playoffs 1st Rd,Week 10,Rec Center,Tue 9/26,6pm,AFC 8-10,AFC 7 seed,AFC 10 seed
 ,,Rec Center,Tue 9/26,7pm,AFC 8-10,AFC 8 seed,AFC 9 seed
 ,,Rec Center,Wed 9/27,6pm,AFL 11-14,AFL 7 seed,AFL 10 seed
 ,,Rec Center,Wed 9/27,7pm,AFL 11-14,AFL 8 seed,AFL 9 seed
-,,,,,,,
 ,,Century Park1,Sat 9/30,10am,NFC 5-7,NFC 3 seed,NFC 6 seed
 ,,Century Park2,Sat 9/30,10am,NFC 5-7,NFC 4 seed,NFC 5 seed
 ,,Century Park1,Sat 9/30,11am,AFC 8-10,AFC 1 seed,Lowest AFC
