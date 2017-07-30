@@ -160,7 +160,7 @@ def addTeam(team):
     if not team in teamSchedule:
         teamSchedule[team] = list()
 
-with open('orig.csv') as csvfile:
+with open('/vagrant/orig.csv') as csvfile:
     reader = csv.reader(csvfile, dialect='excel')
 
     for row in reader:
@@ -196,14 +196,15 @@ with open('orig.csv') as csvfile:
             'away': away
         }
 
-        fixgame(game)
-        games.append(game)
+        if game['loc'] != '':
+            fixgame(game)
+            games.append(game)
 
-        if not division in teams:
-            teams[division] = dict()
+            if not division in teams:
+                teams[division] = dict()
 
-        teams[division][home] = True
-        teams[division][away] = True
+            teams[division][home] = True
+            teams[division][away] = True
 
 check_two("Dolphins", "Storm")
 check_two("Bears", "Jaguars")
@@ -212,10 +213,12 @@ check_two("Steelers", "Fury")
 
 # these teams are assistants for at least one of the team so they don't necessarily need
 # the one hour gap, but they do need to be on the same field
-check_two("Jets", "Storm")
-check_two("Texans", "Outlaws")
-check_two("Buccaneers", "Ravens")
-check_two("Ravens", "Blaze")
+check_two("Jets", "Storm", True)
+check_two("Texans", "Outlaws", True)
+check_two("Buccaneers", "Ravens", True)
+check_two("Ravens", "Blaze", True)
+
+check_two("Broncos", "Rush", True)
 
 # these are spectators so it isn't as important to have the hour gap
 # however it would be nice if they could be at the same field back to back
