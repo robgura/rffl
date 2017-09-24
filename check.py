@@ -160,7 +160,7 @@ def addTeam(team):
     if not team in teamSchedule:
         teamSchedule[team] = list()
 
-with open('/vagrant/orig.csv') as csvfile:
+with open('./orig.csv') as csvfile:
     reader = csv.reader(csvfile, dialect='excel')
 
     for row in reader:
